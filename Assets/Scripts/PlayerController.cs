@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public Text countText;
     public Text winText;
+    public GameObject EastWall;
 
     private Rigidbody rb;
     private int count;
@@ -34,14 +35,16 @@ public class PlayerController : MonoBehaviour {
             count = count + 1;
             SetCountText();
         }
-
+        
     }
     void SetCountText ()
     {
         countText.text = "Count: " + count.ToString();
-        if (count>=8)
-        {
-            winText.text = "You Win!";
-        }
+          
+                if (count == 8)
+                {
+            EastWall.SetActive(false);
+                }
+            }
     }
-}
+
