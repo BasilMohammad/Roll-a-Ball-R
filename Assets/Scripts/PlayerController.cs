@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     public Text countText;
     public Text winText;
     public GameObject EastWall;
+    public GameObject Dissapear;
 
     private Rigidbody rb;
     private int count;
@@ -45,6 +46,10 @@ public class PlayerController : MonoBehaviour {
                 {
             EastWall.SetActive(false);
                 }
+                if (count==10)
+        {
+            Dissapear.SetActive(false);
+        }
             }
     }
 

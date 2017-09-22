@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Pick Up
   - East Wall
+  - SolidWall
+  - Dissapear
+  - Cylinder
   layers:
   - Default
   - TransparentFX
